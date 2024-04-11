@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tittle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+
+        .heading {
+            font-weight: 600;
+            font-size: 56px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .intro {
+            color: white;
+            height: 100vh;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('renBg.jpg') center/cover fixed;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .welcome {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .introImg {
+            width: auto;
+            height: 50vh;
+            aspect-ratio: 1/1;
+        }
+
+        .about {
+            font-size: 20px;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(aboutBg.jpg) center/cover;
+        }
+
+        .about p {
+            font-size: 18px;
+            font-weight: 400;
+            width: 40vw;
+            margin: 7% 0 7% 7%;
+        }
+
+        .greetings {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .name {
+            font-size: 55px;
+            color: #6366f1;
+            font-weight: 600;
+        }
+
+
+
+        .videos {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .videos video,
+        .videos img {
+            border-radius: 13px;
+            aspect-ratio: 9/16;
+            margin: 2%;
+            height: 70vh;
+        }
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .welcome {
+                font-size: 24px;
+            }
+
+            #element {
+                font-size: 14px;
+            }
+
+            .heading {
+                font-size: 23px;
+            }
+
+            .introImg {
+                height: 35vh;
+            }
+
+            .about p{
+                font-size: 14px;
+                width: 90vw;
+            }
+            .greetings{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        <p><span class="welcome">Welcome To</span><br><span class="heading">EDITWAVE <span
+                    style="color: #6366f1;">Creations</span> </span><br><span id="element"></span></p>
+        <img class="introImg" src="introPng.png">
+    </div>
+
+    <div class="about">
+        <p><span class="greetings">Greetings! I'm</span><br>
+            <span class="name">Sujal</span>
+            <br>The creative mind behind EditWave Creations. With a passion for storytelling and an expert touch in
+            video editing, I've spent the last two years crafting captivating content for clients worldwide.<br><br>At
+            EditWave Creations, we specialize in turning your ideas into visually stunning realities that grab attention
+            and leave a lasting impact. From YouTube epics that transport audiences to Instagram snippets that pack a
+            punch, we know how to make every frame count.<br><br>Join us on a journey where creativity knows no bounds
+            and every project is a masterpiece in the making. Let's collaborate and bring your vision to life in ways
+            that captivate and inspire!<br><br>Ready to elevate your content? Let's create magic together at EditWave
+            Creations.<br><br>Feel free to let me know if you need any further adjustments or if there's anything else I
+            can assist you with!
+        </p>
+    </div>
+
+    <div class="heading">Videos</div>
+    <div class="videos">
+        <video autoplay loop controls muted src="shorts2.mp4"></video>
+        <video autoplay loop controls muted src="shorts3.mp4"></video>
+        <video autoplay loop controls muted src="shorts4.mp4"></video>
+    </div>
+
+    <div class="heading" style="margin: 12px 0;">Script to Video</div>
+    <div class="videos">
+        <div class="imgCard" style="display: flex; flex-direction: column; margin: 0 2%;">
+            <img src="videoScript.png">
+            Script
+        </div>
+
+        <div class="videoCard" style="display: flex; flex-direction: column; margin: 0 2%;">
+            <video autoplay loop controls muted src="shorts1.mp4" style="object-fit: cover;"></video>
+            Video
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <div class="bg-black py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                    <div class="flex items-center gap-12">
+                        <h2 class="text-2xl font-bold text-gray-100 lg:text-5xl">I Edit</h2>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                        <img src="https://i.postimg.cc/qMQMBg0C/pexels-george-milton-6953672.jpg" loading="lazy"
+                            alt="Photo by Minh Pham"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span
+                            class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Podcast</span>
+                    </a>
+                    <!-- image - end -->
+
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                        <img src="https://i.postimg.cc/wMTZwqrS/pexels-nappy-3602934.jpg" loading="lazy"
+                            alt="Photo by Magicle"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Story
+                            Telling</span>
+                    </a>
+                    <!-- image - end -->
+
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                        <img src="https://i.postimg.cc/bN4Vt9zX/pexels-lucie-liz-3165335.jpg" loading="lazy"
+                            alt="Photo by Martin Sanchez"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span
+                            class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Gaming</span>
+                    </a>
+                    <!-- image - end -->
+
+                    <!-- image - start -->
+                    <a href="#"
+                        class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                        <img src="https://i.postimg.cc/gkcm7dRc/pexels-tracy-le-blanc-607812.jpg" loading="lazy"
+                            alt="Photo by Lorenzo Herrera"
+                            class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                        <div
+                            class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                        </div>
+
+                        <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Social
+                            Media</span>
+                    </a>
+                    <!-- image - end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading">My Happy Clients</div>
+    <div class="stats">
+        <div class="bg-black mb-12">
+            <div class="mx-auto max-w-screen-lg px-4 md:px-8">
+                <!-- text - start -->
+                <div class="mb-2 md:mb-8">
+                    <p class="mx-auto max-w-screen-md text-center text-gray-300 md:text-lg">I've the privilege of
+                        partnering with numerous clients throughout my career.</p>
+                </div>
+                <!-- text - end -->
+
+                <div class="grid grid-cols-2 gap-6 rounded-lg bg-indigo-500 p-6 md:grid-cols-4 md:gap-8 md:p-8">
+                    <!-- stat - start -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-xl font-bold text-white sm:text-2xl md:text-3xl">2+</div>
+                        <div class="text-sm text-indigo-200 sm:text-base">Years Experience</div>
+                    </div>
+                    <!-- stat - end -->
+
+                    <!-- stat - start -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-xl font-bold text-white sm:text-2xl md:text-3xl">25+</div>
+                        <div class="text-sm text-indigo-200 sm:text-base">Int. Clients</div>
+                    </div>
+
+                    <!-- stat - start -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-xl font-bold text-white sm:text-2xl md:text-3xl">500+</div>
+                        <div class="text-sm text-indigo-200 sm:text-base">Videos Edited</div>
+                    </div>
+                    <!-- stat - end -->
+
+                    <!-- stat - start -->
+                    <div class="flex flex-col items-center">
+                        <div class="text-xl font-bold text-white sm:text-2xl md:text-3xl">100%</div>
+                        <div class="text-sm text-indigo-200 sm:text-base">Client Satisfaction</div>
+                    </div>
+                    <!-- stat - end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading">What others say about me</div>
+    <div class="bg-black py-6 sm:py-8 lg:py-12">
+        <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+            <div class="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
+                <!-- quote - start -->
+                <div class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+                    <div class="text-center text-gray-300">“Incredibly talented editor. Meticulous attention to detail.
+                        Delivered stunning results beyond imagination.”</div>
+
+                    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+                        <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                            <img src="https://i.postimg.cc/D0zTNdDf/361466941-1492549608216070-5265261062130730181-n.jpg"
+                                loading="lazy" alt="Photo by Radu Florin"
+                                class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div>
+                            <div class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">Padmaja
+                                Evuri</div>
+                            <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">50k+ Followers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- quote - end -->
+
+                <!-- quote - start -->
+                <div class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+                    <div class="text-center text-gray-300">“Professional, efficient, and creative. Transformed our
+                        project into a captivating masterpiece. Exceptional work.”</div>
+
+                    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+                        <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                            <img src="https://i.postimg.cc/Xvc67z67/channels4-profile.jpg" loading="lazy"
+                                alt="Photo by christian ferrer" class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div>
+                            <div class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">Wealth
+                                Explorer</div>
+                            <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">1k+ Followers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- quote - end -->
+
+                <!-- quote - start -->
+                <div class="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+                    <div class="text-center text-gray-300">“Exceeded expectations, brought our vision to life
+                        flawlessly. Highly recommend their video editing skills.”</div>
+
+                    <div class="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+                        <div class="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+                            <img src="https://i.postimg.cc/ZYPHszFq/277852771-718295932643191-3580684502720870241-n.jpg"
+                                loading="lazy" alt="Photo by Ayo Ogunseinde"
+                                class="h-full w-full object-cover object-center" />
+                        </div>
+
+                        <div>
+                            <div class="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">SHAPERS
+                                EDUCATION</div>
+                            <p class="text-center text-sm text-gray-500 sm:text-left md:text-sm">5k+ Subscribers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- quote - end -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="bg-black pt-4 sm:pt-10 lg:pt-12">
+            <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div class="flex flex-col items-center border-t border-slate-800 pt-6">
+                    <!-- social - start -->
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/editwave_creations" target="_blank"
+                            class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                            <svg class=width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+
+                        <a href=" https://youtube.com/@Editwave_creations?si=arKyq-jsk2NuOsB2" target="_blank"
+                            class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                            <svg fill="#9ca3af" height="32px" width="32px" version="1.1" id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 310 310" xml:space="preserve">
+                                <g id="XMLID_822_">
+                                    <path id="XMLID_823_"
+                                        d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938 C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527 C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861C204.394,157.263,202.325,160.684,199.021,162.41z" />
+                                </g>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/sujal-singh-039a812a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            target="_blank"
+                            class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                            <svg class=width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://wa.me/6200578924" target="_blank"
+                            class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                            <img src="whatsApp.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- social - end -->
+                </div>
+
+                <div class="py-8 text-center text-sm text-gray-400">© 2024 - Present EDITWAVE Creations. All rights
+                    reserved.
+                </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Where Video Dreams Come True!🎬'],
+            typeSpeed: 40,
+        });
+    </script>
+
+</body>
+
+</html>

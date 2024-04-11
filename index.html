@@ -12,6 +12,20 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
         body {
             font-family: "Poppins", sans-serif;
             margin: 0;
@@ -21,7 +35,7 @@
 
         .heading {
             font-weight: 600;
-            font-size: 56px;
+            font-size: 48px;
             margin: 0;
             text-align: center;
         }
@@ -29,7 +43,7 @@
         .intro {
             color: white;
             height: 100vh;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(renBg.jpg) center/100% 100% fixed;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(renBg.jpg) center/cover fixed;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -38,41 +52,49 @@
         .welcome {
             font-size: 30px;
             font-weight: 400;
+        } .headingName {
+            font-weight: 600;
+            font-size: 64px;
+            margin: 0;
+            text-align: center;
         }
 
         .introImg {
             width: auto;
-            height: 50vh;
-            aspect-ratio: 1/1;
+            height: 30vh;
+            animation: slideUp 1s ease forwards;
         }
 
         .about {
             font-size: 20px;
             font-weight: 400;
+            height: 100vh;
+            width: auto;
             display: flex;
             align-items: center;
-            background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(aboutBg.jpg) center/cover;
+            background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(aboutBg.jpg) center/cover fixed;
         }
 
         .about p {
             font-size: 18px;
             font-weight: 400;
             width: 40vw;
-            margin: 7% 0 7% 7%;
+            margin: 24px;
+            margin-left: 7%;
+            
         }
 
         .greetings {
-            font-size: 24px;
+            font-size: 30px;
             font-weight: 500;
         }
 
         .name {
-            font-size: 55px;
+            font-size: 85px;
             color: #6366f1;
             font-weight: 600;
+            animation: slideUp 1s ease forwards;
         }
-
-
 
         .videos {
             text-align: center;
@@ -92,14 +114,15 @@
 
         @media (max-width: 768px) {
             .intro {
-                flex-direction: column;
-                justify-content: space-around;
+                flex-direction: column-reverse;
+                justify-content: space-evenly;
                 align-items: center;
+                background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('https://i.postimg.cc/yxCwdKJM/peter-stumpf-Fh-ZEpxt-TI-Y-unsplash-1.jpg') center/cover fixed;
                 
             }
 
             .welcome {
-                font-size: 24px;
+                font-size: 28px;
             }
 
             #element {
@@ -107,11 +130,12 @@
             }
 
             .heading {
-                font-size: 23px;
-            }
+                font-size: 32px;
+            }.headingName {font-size: 42px;}
 
             .introImg {
-                height: 35vh;
+                height: 20vh;
+                
             }
 
             .about p{
@@ -127,31 +151,24 @@
 
 <body>
     <div class="intro">
-        <p><span class="welcome">Welcome To</span><br><span class="heading">EDITWAVE <span
+        <p><span class="welcome">Welcome To</span><br><span class="headingName">EDITWAVE <span
                     style="color: #6366f1;">Creations</span> </span><br><span id="element"></span></p>
-        <img class="introImg" src="introPng.png">
+        <img class="introImg" src="tittleLogo.PNG">
     </div>
 
     <div class="about">
         <p><span class="greetings">Greetings! I'm</span><br>
             <span class="name">Sujal</span>
-            <br>The creative mind behind EditWave Creations. With a passion for storytelling and an expert touch in
-            video editing, I've spent the last two years crafting captivating content for clients worldwide.<br><br>At
-            EditWave Creations, we specialize in turning your ideas into visually stunning realities that grab attention
-            and leave a lasting impact. From YouTube epics that transport audiences to Instagram snippets that pack a
-            punch, we know how to make every frame count.<br><br>Join us on a journey where creativity knows no bounds
-            and every project is a masterpiece in the making. Let's collaborate and bring your vision to life in ways
-            that captivate and inspire!<br><br>Ready to elevate your content? Let's create magic together at EditWave
-            Creations.<br><br>Feel free to let me know if you need any further adjustments or if there's anything else I
-            can assist you with!
+            <br><span id="aboutP"></span>
+            <br>The creative mind behind EditWave Creations. With a passion for storytelling and expert video editing skills, I've spent two years crafting captivating content for clients worldwide.<br><br>At EditWave Creations, we specialize in turning your ideas into visually stunning realities. From YouTube epics to Instagram snippets, every frame counts.<br><br> Let's collaborate and bring your vision to life! Ready to create magic together at EditWave.
         </p>
     </div>
 
     <div class="heading">Videos</div>
     <div class="videos">
         <video autoplay loop controls muted src="shorts2.mp4"></video>
-        <video autoplay loop controls muted src="shorts3.mp4"></video>
         <video autoplay loop controls muted src="shorts4.mp4"></video>
+        <video autoplay loop controls muted src="shorts3.mp4"></video>
     </div>
 
     <div class="heading" style="margin: 12px 0;">Script to Video</div>
@@ -412,7 +429,6 @@
             typeSpeed: 40,
         });
     </script>
-
 </body>
 
 </html>
